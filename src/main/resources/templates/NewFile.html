@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<htmlxmlns:th"http://www.thymeleaf.org">
+	<head>
+<meta charset="UTF-8">
+<title>瀏覽文章</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	</head>
+
+	<body  style="background-color: #B4B4B4">
+
+		<div class=header style="width: 100vw">
+			<nav class="navbar navbar-light" style="background-color: #D1D2D2"
+				style="height: 128px">
+				<form class="form-inline m-auto" >
+					<i class="fa-solid fa-house m-3" ></i>
+					<input class="form-control mr-sm-2 "style="width: 58vw" type="search" 
+						placeholder="輸入搜尋關鍵字" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit" >搜尋</button>
+				</form>
+
+			</nav>
+			<div class=nav></div>
+		</div>
+
+		<div class="d-flex  ">
+			<div >
+				<nav class="navbar navbar-light p-0"
+					style="background-color: #1A2A2E; height: 580px;width:200px"
+					>
+					<form class=" d-flex form-inline mt-3 " >
+						<label style="width:200px;background-color:#007250; height: 48px">新增文章</label>
+						
+					</form>
+
+				</nav>
+			</div>
+
+
+			<div class="left d-flex  mt-auto mb-auto  mb-auto ml-5"  >
+
+				<div class="main  d-flex align-items-end flex-column" >
+
+					<select class="custom-select mr-sm-2 "
+						style="width: 160px; height: 40px" id="inlineFormCustomSelect">
+						<option selected>選擇文章分類</option>
+						<option value="1">社會</option>
+						<option value="2">健康</option>
+						<option value="3">旅遊</option>
+					</select>
+					<form>
+						<div class="form-group ">
+							<label for="exampleFormControlInput1 fw-bold fs-4">新增標題</label> <input
+								type="email" class="form-control is-valid" style="width: 65vw"
+								id="exampleFormControlInput1" placeholder="標題">
+						</div>
+
+
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1 fw-bold fs-4">新增內容</label>
+							<textarea class="form-control is-valid"
+							style="height:35vh"
+								id="exampleFormControlTextarea1" rows="3" placeholder="內容新增"></textarea>
+						</div>
+					</form>
+					<div class="button">
+					<button type="button" class="btn btn-success">確定新增</button>
+					<button type="button" class="btn btn-outline-success">取消</button>
+					</div>
+					
+					
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	</html>
